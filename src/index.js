@@ -7,8 +7,8 @@ const app= express()
 const __dirname= dirname(fileURLToPath(import.meta.url))
 app.set("views", join(__dirname, "views"))
 app.set("view engine", "ejs")
+app.
 
-
-app.get("/",(req, res)=> res.send("index"))
+app.get("/", (req, res) => res.render("index"))
 app.listen(3000)
-console.log("Server Listening on port", 3000)
+console.log("Server Listening on port",3000)
